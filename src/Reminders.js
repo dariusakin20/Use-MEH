@@ -55,6 +55,8 @@ export const Reminders = () => {
           <select value={selectedTime} onChange={handleTimeChange}>
             <option value="">Select Time</option>
             <option value="1">1 minutes</option>
+            <option value="5">5 minutes</option>
+            <option value="10">10 minutes</option>
             <option value="30">30 minutes</option>
             <option value="50">50 minutes</option>
             <option value="90">90 minutes</option>
