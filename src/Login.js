@@ -12,11 +12,24 @@ export const Login = () => {
       console.log('Login successful');
       navigate('/app');
     }, 1000); 
+
+    // const emailVali = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    // if (!emailVali.test(email)) {
+    //   alert("Please enter a valid email address!");
+    //   return;
+    // }
+
+    // if (password.length < 8) {
+    //   alert('Password must be at least 8 characters long!');
+    //   return;
+    // }
+
   };
 
   return (
     <div className='loginForm'>
-      <h1>Sign In</h1>
+      <h1>Welcome to UseMeh</h1>
+      <h2>Sign In</h2>
       <form onSubmit={handleLogin}>
         <input
           type="text"
@@ -33,6 +46,7 @@ export const Login = () => {
 
         <button type="submit">Sign In</button>
       </form>
+      <h6>Created by Darius Akinrimisi</h6>
     </div>
   );
 };

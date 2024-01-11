@@ -6,6 +6,8 @@ export const PomodoroTimer = () => {
   const [timerRunning, setTimerRunning] = useState(false);
   const [isWorkTime, setWorkTime] = useState(false);
   const [isBreakTime, setBreakTime] = useState(false);
+  const [workCount, setWorkCount] = useState(0);
+  const [breakCount, setBreakCount] = useState(0);
 
   useEffect(() => {
     let timer;
@@ -19,17 +21,19 @@ export const PomodoroTimer = () => {
                 setWorkTime(false);
                 setBreakTime(true);
                 alert("BREAK TIME!");
+                setWorkCount(workCount + 1)
                 return 0;
               } else if (prevMinutes === 1 && isBreakTime) {
                 setWorkTime(true);
                 setBreakTime(false);
                 alert("WORK TIME!");
+                setBreakCount(breakCount + 1)
                 return 0;
               } else {
                 return prevMinutes + 1;
               }
             });
-            return 0; // Reset seconds to 0
+            return 0;
           } else {
             return prevSeconds + 1;
           }
@@ -79,6 +83,12 @@ export const PomodoroTimer = () => {
       <button onClick={startTimer}>Start</button>
       <button onClick={pauseTimer}>{timerRunning ? 'Pause' : 'Resume'}</button>
       <button onClick={stopTimer}>Reset</button>
+
+
+      <div>
+        <p>Working Sessions: {workCount}</p>
+        <p>Breaking Sessions: {breakCount}</p>
+      </div>
     </div>
   );
 };
