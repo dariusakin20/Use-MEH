@@ -8,15 +8,10 @@ export const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-
-    // Simulating an asynchronous operation (e.g., API request)
     setTimeout(() => {
-      // Assuming login is successful
       console.log('Login successful');
-
-      // Navigate to the '/app' route
       navigate('/app');
-    }, 1000); // Simulating a delay of 1 second
+    }, 1000); 
   };
 
   return (
