@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './FormLogin.css'
 
 export const Login = () => {
   const [email, setEmail] = useState('');
@@ -13,6 +14,7 @@ export const Login = () => {
       navigate('/app');
     }, 1000); 
 
+    //Email and Password validation 
     // const emailVali = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     // if (!emailVali.test(email)) {
     //   alert("Please enter a valid email address!");
@@ -28,23 +30,25 @@ export const Login = () => {
 
   return (
     <div className='loginForm'>
-      <h1>Welcome to UseMeh</h1>
-      <h2>Sign In</h2>
-      <form onSubmit={handleLogin}>
+      <h1 className='headerText'>UseMeh</h1>
+      <h2 className='subHeaderText'>Sign In</h2>
+      <form className='inputForm' onSubmit={handleLogin}>
         <input
           type="text"
-          placeholder='email'
+          placeholder='Email'
+          className='inputFormInputs'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
           type="password"
-          placeholder='password'
+          placeholder='Password'
+          className='inputFormInputs'
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <button type="submit">Sign In</button>
+        <button type="submit" className='buttons'>Sign In</button>
       </form>
       <h6>Created by Darius Akinrimisi</h6>
     </div>

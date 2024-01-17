@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background: linear-gradient(#C5FFFD, #88D9E6);
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    width: 600px;
+    margin-top: 50px; /* Adjust this value as needed */
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px; /* Adjust the border-radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft box shadow */
+}
+
+.headerText {
+    color: #336AEB;
+    font-size: 48px;
+    font-weight: 900;
+    align-items: left;
+}
+
+.subHeaderText {
+    color: #336AEB;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+.inputForm  {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.inputForm input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 220px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+
+/* CSS */
+.buttons {
+  background-color: #336AEB;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buttons:hover,
+.buttons:focus {
+  background-color: #F082AC;
+}

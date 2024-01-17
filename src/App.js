@@ -42,6 +42,7 @@ const MainPage = () => {
     <div className="App">
       <h1>UseMEH</h1>
       <div className="quote">
+      <h1>Daily Quotes</h1>
         <p>{quotes.text}</p>
         <p>Author: {quotes.author}</p>
         <div className='btnContainer'>
