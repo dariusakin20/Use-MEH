@@ -5,6 +5,8 @@ import { v4 as uuidv4 } from 'uuid'; // Correct import for 'uuid'
 import { Todo } from './Todo';
 import { EditTodoForm } from './EditTodoForm';
 import { PomodoroTimer } from './PomodoroTimer';
+import './Form.css';
+
 
 export const TodoWrapper = () => {
     const [todos, setTodos] = useState([]);
@@ -36,7 +38,8 @@ export const TodoWrapper = () => {
 
     return (
         <div>
-            <h1>To-Do List</h1>
+            <div className='wrapAround' >
+            <h1 className='headerText'>To-Do List</h1>
             <TodoForm addTodo={addTodo}/>
             {todos.map((todo, index) => (
                 todo.isEditing ? (
@@ -48,12 +51,17 @@ export const TodoWrapper = () => {
                     editTodo={editTodo}/>
                 )  
             ))}
+            </div>
             
-            <h1>Reminders</h1>
+            <div className='wrapAround'>
+            <h1 className='headerText'>Reminders</h1>
              <Reminders />
+             </div>
 
-             <h1>Pomodoro Timer</h1>
+             <div className='wrapAround'>
+             <h1 className='headerText'> Pomodoro Timer</h1>
              <PomodoroTimer seconds={15} />
+             </div>
         </div>
     );
 };

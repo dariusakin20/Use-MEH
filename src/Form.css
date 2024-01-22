@@ -1,0 +1,64 @@
+
+.App {
+    text-align: center;
+    /* background-color: beige; */
+  }
+  
+.headerText {
+    color: #0e2252;
+    font-size: 4px;
+    font-weight: 900;
+}
+
+.headerText1 {
+    color: #336AEB;
+    font-size: 25px;
+    font-weight: 900;
+    
+}
+
+.wrapAround {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    width: 600px;
+    margin-top: 50px; 
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* CSS */
+.buttons {
+  background-color: #336AEB;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buttons:hover,
+.buttons:focus {
+  background-color: #7991cb;
+}
+

@@ -1,9 +1,10 @@
-import './App.css';
+import './Form.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Login } from './Login';
 import { TodoWrapper } from './TodoWrapper';
+
 
 function App() {
   return (
@@ -40,9 +41,11 @@ const MainPage = () => {
 
   return (
     <div className="App">
-      <h1>UseMEH</h1>
-      <div className="quote">
-      <h1>Daily Quotes</h1>
+
+      <h1 className='headerText'>UseMEH</h1>
+    
+      <div className="wrapAround">
+      <h1 className='headerText'>Daily Quotes</h1>
         <p>{quotes.text}</p>
         <p>Author: {quotes.author}</p>
         <div className='btnContainer'>
