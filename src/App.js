@@ -49,7 +49,7 @@ const MainPage = () => {
         <p>{quotes.text}</p>
         <p>Author: {quotes.author}</p>
         <div className='btnContainer'>
-          <button onClick={getQuote} className='btn'>New quote</button>
+          <button onClick={getQuote} className='buttons'>New quote</button>
           {quotes.text !== '' && (
             <a
               href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(quotes.text)}`}

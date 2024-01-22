@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './FormLogin.css';
+
 
 export const Reminders = () => {
   const [reminderValue, setReminderValue] = useState('');
@@ -62,8 +64,8 @@ export const Reminders = () => {
             <option value="90">90 minutes</option>
           </select>
         </label>
-        <button type="button" onClick={setReminder}>
-          Set Reminder
+        <button type="buttons" onClick={setReminder}>
+          Set Reminders
         </button>
       </form>
 

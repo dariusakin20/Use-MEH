@@ -20,7 +20,7 @@ export const TodoForm = ({ addTodo }) => {
       <input type='text'className='todo-input'value={value} placeholder='Enter new task here'
     onChange={handleChange}
       />
-      <button type='submit' className='todo-btn'>
+      <button type='submit' className='buttons'>
         Add Task
       </button>
     </form>
