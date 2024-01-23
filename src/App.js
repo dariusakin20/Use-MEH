@@ -19,7 +19,6 @@ function App() {
   );
 }
 
-
 const MainPage = () => {
   const [quotes, setQuotes] = useState({ text: '', author: '' });
 
@@ -55,7 +54,7 @@ const MainPage = () => {
               href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(quotes.text)}`}
               target="_blank"
               rel='noopener noreferrer'
-              className='btn'
+              className='buttonsRed'
             >
               Post on X
             </a>

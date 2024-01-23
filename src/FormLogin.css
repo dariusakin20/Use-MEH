@@ -4,8 +4,8 @@ body {
     height: absolute;
     background: linear-gradient(#C5FFFD, #88D9E6);
     display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
+    justify-content: center; 
+    align-items: center; 
 }
 
 .loginForm {
@@ -14,10 +14,10 @@ body {
     align-items: center;
     gap: 1px;
     width: 600px;
-    margin-top: 50px; /* Adjust this value as needed */
+    margin-top: 50px; 
     background-color: rgb(255, 255, 255);
-    border-radius: 10px; /* Adjust the border-radius for rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft box shadow */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .headerText {
@@ -52,7 +52,6 @@ body {
 }
 
 
-/* CSS */
 .buttons {
   background-color: #336AEB;
   border-radius: 8px;
@@ -85,56 +84,60 @@ body {
   background-color: #7991cb;
 }
 
-/* CSS */
-.button-45 {
-  align-items: center;
-  background-color: #FFE7E7;
-  background-position: 0 0;
-  border: 1px solid #FEE0E0;
-  border-radius: 11px;
-  box-sizing: border-box;
-  color: #D33A2C;
-  cursor: pointer;
-  display: flex;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 33.4929px;
-  list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
-  padding: 2px 12px;
-  text-align: left;
-  text-decoration: none;
-  text-shadow: none;
-  text-underline-offset: 1px;
-  transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  word-break: break-word;
+.newInputFields {
+    margin-bottom: 10px;
+    background-color: #fff;
+    height: 31px;
+    padding: 3px 7px;
+    line-height: normal;
+    border: 1px solid #a6a6a6;
+    border-top-color: #949494;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset;
+    outline: 0;
+    margin-right: 40px;
+    color: #111;
+    font-size: 13px;
+    :focus{
+        border-color: #e77600;
+        box-shadow: 0 0 3px 2px rgb(228 121 17 / 50%);
+    }
+    
+
 }
 
-.button-45:active,
-.button-45:hover,
-.button-45:focus {
-  outline: 0;
-}
+.buttonsRed {
+    background-color: #ea1313;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin-top: 10px; /* Adjust margin-top as needed */
+    outline: none;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 100ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .buttons:hover,
+  .buttons:focus {
+    background-color: #d64326;
+  }
+  
 
-
-.button-45:active {
-  background-color: #D33A2C;
-  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
-  color: #FFFFFF;
-}
-
-.button-45:hover {
-  background-color: #FFE3E3;
-  border-color: #FAA4A4;
-}
-
-.button-45:active:hover,
-.button-45:focus:hover,
-.button-45:focus {
-  background-color: #D33A2C;
-  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
-  color: #FFFFFF;
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

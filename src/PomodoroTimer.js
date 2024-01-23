@@ -75,7 +75,7 @@ export const PomodoroTimer = () => {
   return (
     <div>
       <button onClick={WorkTimerTrue} className='buttons'>Work Time</button>
-      <button onClick={BreakTimerTrue} className='buttons'>Break Time</button>
+      <button onClick={BreakTimerTrue} className='buttonsRed'>Break Time</button>
 
       <h1>
         {minutes < 10 ? '0' + minutes : minutes} : {seconds < 10 ? '0' + seconds : seconds}

@@ -32,6 +32,7 @@
 /* CSS */
 .buttons {
   background-color: #336AEB;
+  margin-bottom: 10px;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;

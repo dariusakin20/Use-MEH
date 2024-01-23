@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './FormLogin.css';
 
-
 export const Reminders = () => {
   const [reminderValue, setReminderValue] = useState('');
   const [selectedTime, setSelectedTime] = useState(null);
@@ -44,17 +43,18 @@ export const Reminders = () => {
   };
 
   return (
-    <div>
+    <div className="formContainer">
       <form onSubmit={handleSubmit}>
         <input
           type="text"
           value={reminderValue}
+          className='newInputFields'
           placeholder="Enter a new reminder here"
           onChange={handleChange}
         />
         <label>
-          Time:
-          <select value={selectedTime} onChange={handleTimeChange}>
+          Time :
+          <select className='newInputFields' value={selectedTime} onChange={handleTimeChange}>
             <option value="">Select Time</option>
             <option value="1">1 minutes</option>
             <option value="5">5 minutes</option>
@@ -64,7 +64,7 @@ export const Reminders = () => {
             <option value="90">90 minutes</option>
           </select>
         </label>
-        <button type="buttons" onClick={setReminder}>
+        <button type="button" className='buttonsRed' onClick={setReminder}>
           Set Reminders
         </button>
       </form>
